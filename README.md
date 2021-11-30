@@ -1,7 +1,6 @@
-# Assignment2
+# 원티드x위코드 백엔드 프리온보딩 프로젝트
 
-원티드x위코드 백엔드 프리온보딩 과제2
-- 과제 출제 기업 정보
+- 프로젝트 출제 기업 정보
   - 기업명 : 마피아컴퍼니
   - [마피아컴퍼니 사이트](http://www.mapiacompany.com/)
   - [wanted 채용공고 링크](https://www.wanted.co.kr/company/6137)
@@ -16,7 +15,12 @@
 |박세원 |[sw-develop](https://github.com/sw-develop) | neo4j디비셋팅, 모델링, 곡 GraphQL작성 |
 
 
-## 과제 내용
+
+## 구현 조건 내용
+<details>
+<summary><b>과제내용 자세히 보기</b></summary>
+<div markdown="1">
+  
 > 아래의 상황을 읽고 요구사항을 구현해주세요!
 >
 - 마피아컴퍼니 선호 기술스택
@@ -84,7 +88,10 @@
 - **FastAPI 프레임워크 요구사항**
     - Restful API로 구현하셨을 경우, FastAPI의 OpenAPI로 API 문서화해주세요.
 
+</div>
+</details>
 
+  
 ## 사용 기술 및 tools
 > - Back-End :  <img src="https://img.shields.io/badge/Python 3.8-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Django 3.2-092E20?style=for-the-badge&logo=Django&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/neo4j 4.2-0d73ff?style=for-the-badge&logo=neo4j&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/graphql-d31195?style=for-the-badge&logo=Graphql&logoColor=white"/>
 > - Deploy : <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=for-the-badge&logo=Amazon&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Docker-0052CC?style=for-the-badge&logo=Docker&logoColor=white"/>
@@ -155,7 +162,7 @@
 1. 우측 링크를 클릭해서 postman으로 들어갑니다. [링크](https://www.postman.com/wecode-21-1st-kaka0/workspace/assignment2/overview)
 
 2. 정의된 SERVER_URL이 올바른지 확인 합니다. (18.188.189.173:8011)
-<img width="751" alt="스크린샷 2021-11-06 오전 9 41 15" src="https://user-images.githubusercontent.com/8219812/140591976-34107d63-c21e-4a18-8c47-8a3b740a2053.png">
+<img width="751" alt="스크린샷 2021-11-06 오전 9 41 15" src="https://user-images.githubusercontent.com/8219812/140591976-34107d63-c21e-4a18-8c47-8a3b740a2053.png">
 
 
 3. 만약 Send버튼이 비활성화가 될 시 fork를 이용해서 해당 postman project를 복사해서 시도하길 바랍니다.
@@ -163,6 +170,10 @@
 
 
 ## 설치 및 실행 방법
+<details>
+<summary><b>Local 개발 및 테스트용</b></summary>
+<div markdown="1">
+
 ###  Local 개발 및 테스트용
 
 1. 해당프로젝트를 clone 하고, 프로젝트 폴더로 들어간다.
@@ -195,6 +206,14 @@
     ```bash
     docker-compose -f docker-compose-dev-local.yml up -d
     ```
+
+</div>
+</details>
+
+
+<details>
+<summary><b>배포용</b></summary>
+<div markdown="1">
 
 ###  배포용 
 1. 해당프로젝트를 clone 하고, 프로젝트 폴더로 들어간다.
@@ -233,6 +252,9 @@
     docker-compose -f docker-compose-deploy.yml up -d
     ```
 
+</div>
+</details>  
+  
 ## 폴더 구조
 
 ```bash
